@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imgVideoFiles"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_folder" />
+
+    <TextView
+        android:id="@+id/txtVideoFile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imgVideoFiles"
+        app:layout_constraintStart_toEndOf="@id/imgVideoFiles"
+        app:layout_constraintTop_toTopOf="@id/imgVideoFiles"
+        tools:text="File Name jskdasf s;fas osjd DPODK dpodk ;SDFF FDF DF DF DF F DSF F AF SAS DSD ASD ASD ASDA SDSA DASD ASD A SD ASD" />
+
+    <TextView
+        android:id="@+id/txtVideoDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="#7C7979"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        tools:text="11:11:11"
+        android:textColor="@color/white"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgVideoFiles"
+        app:layout_constraintEnd_toEndOf="@id/imgVideoFiles" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
